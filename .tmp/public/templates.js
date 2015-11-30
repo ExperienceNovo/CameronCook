@@ -2,17 +2,30 @@ angular.module('templates-app', ['about/index.tpl.html', 'contact/index.tpl.html
 
 angular.module("about/index.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("about/index.tpl.html",
-    "ABOUT");
+    "ABOUT\n" +
+    "<p>Jazz-influenced, soul-afflicted saxophonist & singer-songerwriter from the 21st century. Let's get down y'all</p>\n" +
+    "<img src=\"/images/home/mug.jpg\"/>\n" +
+    "<img src=\"/images/home/bun.jpg\"/>\n" +
+    "<img src=\"/images/home/cam.jpg\"/>\n" +
+    "");
 }]);
 
 angular.module("contact/index.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("contact/index.tpl.html",
-    "CONTACT");
+    "CONTACT\n" +
+    "<img src=\"/images/home/mug.jpg\"/>\n" +
+    "<img src=\"/images/home/cameron_cook.jpg\"/>\n" +
+    "<img src=\"/images/home/sax.jpg\"/>\n" +
+    "<img src=\"/images/home/montreal.jpg\"/>\n" +
+    "<img src=\"/images/home/cam.jpg\"/>");
 }]);
 
 angular.module("home/index.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/index.tpl.html",
-    "CAMERON COOK\n" +
+    "<div style=\"padding:33px;position:absolute;left:0;right:0;margin:auto;background-color:rgba(74, 96, 86,.88);\">\n" +
+    "	<p style=\"color:rgb(255,255,255);font-weight:600;\">CAMERON COOK</p>\n" +
+    "</div>\n" +
+    "<img src=\"/images/home/cameron_cook.jpg\"/>\n" +
     "");
 }]);
 
@@ -94,21 +107,16 @@ angular.module("register/index.tpl.html", []).run(["$templateCache", function($t
 angular.module("sidebar/index.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("sidebar/index.tpl.html",
     "<div ng-controller=\"SidebarCtrl\">\n" +
-    "    <div ng-show=\"sidebar_color == 'white'\" class=\"side-bars\">\n" +
+    "    <div class=\"side-bars\">\n" +
     "        <div class=\"icon-bar\"></div>\n" +
     "        <div class=\"icon-bar\"></div>\n" +
     "        <div class=\"icon-bar\"></div>\n" +
-    "    </div>\n" +
-    "    <div ng-show=\"sidebar_color == 'black'\" class=\"side-bars\">\n" +
-    "        <div class=\"icon-bar-black\"></div>\n" +
-    "        <div class=\"icon-bar-black\"></div>\n" +
-    "        <div class=\"icon-bar-black\"></div>\n" +
-    "    </div>      \n" +
+    "    </div>  \n" +
     "    <div class=\"page-nav-zone\">\n" +
     "        <div class=\"flex-item-top\"></div>\n" +
     "        <div class=\"item-container\" id=\"logo-container\">\n" +
     "            <div class=\"list-item\">\n" +
-    "                <div class=\"nav-large-list nav-logo\"><img id=\"sidebar-logo\" src=\"/images/novo/tri.png\" style=\"max-width:25%\"/></div>\n" +
+    "                <!--<div class=\"nav-large-list nav-logo\"><img id=\"sidebar-logo\" src=\"/images/novo/tri.png\" style=\"max-width:25%\"/></div>-->\n" +
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"item-container\">\n" +
