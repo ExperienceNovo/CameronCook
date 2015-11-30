@@ -1,0 +1,564 @@
+.contact-outter {
+    height: 100%;
+    width: 100%;
+    margin-top:50px;
+}
+
+.contact-outter * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.contact-card-container {
+    width: 310px;
+    height: 310px;
+    position: relative;
+    margin:0 auto 25px auto;
+    -webkit-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+}
+
+.contact-topping {
+    /*border-top: 3px solid #14B795;*/
+    height: 100%;
+    width: 100%;
+}
+
+.contact-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .8s cubic-bezier(0.175,0.885,0.32,1.275);
+    transition: transform .8s cubic-bezier(0.175,0.885,0.32,1.275);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.contact-card div {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    background: #fff;
+    overflow: hidden;
+}
+
+.contact-card div * {
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+}
+
+.contact-card .front h2 {
+    font-family: 'Quicksand',sans-serif;
+    letter-spacing: 3px;
+    color: #fff;
+    font-size: 150%;
+    text-transform: uppercase;
+    margin: 0;
+    padding:10px 0;
+    position: absolute;
+    font-weight: 100;
+}
+
+.contact-card .front:hover h2 {
+    color: #14B795;
+}
+
+.contact-card .back p {
+    font-family: 'Monda',sans-serif;
+    color: #000;
+    font-size: 150%;
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+.contact-card .back p strong {
+    color:#14B795
+}
+
+.contact-card .back p:hover {
+    color: #14B795;
+    cursor:url(/images/util/phone.png), auto;
+}
+
+.contact-card .back p:hover strong {
+    color: #000;
+}
+
+.contact-card .front h2 {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    right: 30px;
+    -webkit-transform: rotate(0deg) translateY(-50%) scale(1);
+    transform: rotate(0deg) translateY(-50%) scale(1);
+    -webkit-transform-origin: center 0;
+    transform-origin: center 0
+}
+
+.contact-card .front h2 span {
+    font-weight: 900;
+    color: #14B795;
+}
+
+.contact-card .front:hover h2 span  {
+    color: #fff;
+}
+
+.contact-card .front:hover h2:before,
+.contact-card .front:hover h2:after {
+    background-color: #fff;
+}
+
+.contact-card .front h2:before,
+.contact-card .front h2:after {
+    background-color: #14B795;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    content: "";
+    display: block;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out
+}
+
+.contact-card .front h2:before {
+    left: 0;
+    top: 0
+}
+
+.contact-card .front h2:after {
+    bottom: 0;
+    right: 0
+}
+
+.contact-card .front:hover h2 {
+    -webkit-transform: rotate(-45deg) translateY(-50%) scale(0.9);
+    transform: rotate(-45deg) translateY(-50%) scale(0.9)
+}
+
+.contact-card .front:hover h2:before,
+.contact-card .front:hover h2:after {
+    width: 200%
+}
+
+.contact-card .back {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.contact-card.flipped .front {
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contact-card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.contact-card .front.front-one {
+    background: url(/images/util/overlay.png), url(/images/contact/nc-bw.jpg);
+    background-size: cover;
+}
+
+.contact-card .front.front-two {
+    background: url(/images/util/overlay.png), url(/images/contact/chi-bw.jpg);
+    background-size: cover;
+}
+
+.contact-card .front.front-three {
+    background: url(/images/util/overlay.png), url(/images/contact/pa-bw.jpg);
+    background-size: cover;
+}
+
+.contact-page-container {
+    z-index:20;
+    background:#fff;
+    min-height: 100%;
+    color: #000;
+    width:100%;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    border-top: 2.5px solid #14B795;
+}
+
+.contact-title {
+    position: relative;
+    font-family: 'Monda', sans-serif;
+    color:#1c1c1c;
+    margin-top:2.5%;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.stay-connected {
+    position: relative;
+    font-family: 'Monda', sans-serif;
+    color:#000;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+    margin-bottom: 5%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.contact-email {
+    font-family: 'Monda',sans-serif;
+    font-size: 3em;
+    color: #14B795;
+    font-weight: 300
+}
+
+.contact-top {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    cursor: default;
+    height: 40vh;
+    background: url(/images/util/overlay.png), url(/images/contact/contact-top.jpg) no-repeat;
+    background-size: cover;
+}
+
+.social-wrapper {
+    margin-top:30px;
+}
+
+@media screen and (max-width: 510px) {
+    .social-wrapper {
+        margin-top:0;
+    }
+}
+
+.stay-top {
+    font-family: 'Monda', sans-serif;
+    color:#fff;
+    letter-spacing: 10px;
+    font-size: 3.5em;
+    font-weight: 100;
+    padding-top:30px;
+    padding-bottom: 35px;
+    right: 0;
+    left: 0;
+}
+
+.social {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.social-wrapper .social:nth-of-type(2),
+.social-wrapper .social:nth-of-type(3) {
+    margin-right:25px;
+}
+
+.social a {
+    line-height: 50px;
+    font-family: Entypo;
+    font-size: 35px;
+    text-align: center;
+    color: #14B795;
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+a.contact-email:hover {
+    color: #fff;
+}
+
+.bottom-contact {
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.bottom-form {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.margin {
+    margin: 0 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 991px) {
+.card-wrapper {
+    margin-bottom: 3%!important;
+}
+.map-outter {
+    width: 100%!important;
+    padding-top: 25px!important;
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+    margin: 0;
+}
+.work-outter {
+    width: 100%!important;
+    padding-top: 25px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    margin: 0;
+}
+}
+
+:focus {
+    outline:none
+}
+
+.inputGroup {
+    position:relative;
+    margin-bottom:30px
+}
+
+.inputGroup label {
+    position:absolute;
+    top:0;
+    left:5px;
+    pointer-events:none;
+    transition:all .3s ease;
+    font-size:16px;
+    font-family:Trebuchet MS;
+    color:#14B795;
+    font-weight:600;
+    font-family: 'Jura',sans-serif;
+    text-transform:uppercase
+}
+
+.inputGroup input,.inputGroup textarea {
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #1c1c1c;
+    left:25px;
+    padding:5px;
+    font-family:Trebuchet MS;
+    background:none;
+    color:#1c1c1c
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup textarea:valid ~ label {
+    top:-20px;
+    transition:all .3s ease;
+    font-size:13px
+}
+
+.inputGroup input:focus ~ .inputBar:before,
+.inputGroup input:focus ~ .inputBar:after,
+.inputGroup textarea:focus ~ .inputBar:before,
+.inputGroup textarea:focus ~ .inputBar:after {
+    width:50%
+}
+
+.inputGroup textarea {
+    height:100px;
+    width:100%;
+    overflow:auto;
+    resize:none
+}
+
+.inputGroup .inputBar {
+    position:relative;
+    display:block;
+    width:100%
+}
+
+.inputGroup .inputBar:before,.inputGroup .inputBar:after {
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:0;
+    background:#14B795;
+    height:2px;
+    transition:all .7s ease
+}
+
+.inputGroup .inputBar:after {
+    right:50%
+}
+
+.inputGroup .inputBar:before {
+    left:50%
+}
+
+button {
+    background-color:#f1f1f1;
+    border:none;
+    width:100px;
+    padding: 10px;
+    color:#1C1C1C;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+    font-family:'Monda',sans-serif;
+    font-size:15px;
+    border-radius:5px;
+    box-shadow:0 6px #BDBDBD;
+    position:relative;
+    cursor:pointer
+}
+
+button:hover {
+    box-shadow:0 4px #BDBDBD;
+}
+
+button:active {
+    top:6px;
+    box-shadow:0 0
+}
+
+.map-outter {
+    display: block;
+    width: 50%;
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 75px;
+    margin: 0;
+    float: right;
+}
+
+.work-outter {
+    display: block;
+    width: 50%;
+    padding-top: 65px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    float: left;
+}
+
+.card-wrapper {
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 15%;
+    -webkit-touch-callout: none;
+}
+
+.block {
+    display: block
+}
+
+.card {
+    position: relative;
+    text-align: center
+}
+
+.card__front,.card__back {
+    cursor:pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 310px;
+    height: 310px
+}
+
+.card__front,.card__back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s
+}
+
+.card__front {
+    background-color: #000
+}
+
+.card__back {
+    position: absolute;
+    background-color: #fff;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+.card__name {
+    color:#000!important;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px
+}
+
+.card__phone {
+    color:#14B795!important;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom:125px;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px
+}
+
+input[type="checkbox"]:checked + .child .card__front {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+input[type="checkbox"]:checked + .child .card__back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
+/* media queries */
+@media only screen and (max-width: 568px) {
+.stay-connected {
+    font-size: 5em;
+}
+}

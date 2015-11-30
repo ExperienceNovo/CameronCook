@@ -1,0 +1,8 @@
+.content-iframe {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    border-style: none!important;
+    border-top-style: none!important;
+    border:none!important;
+}

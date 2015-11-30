@@ -1,0 +1,20 @@
+.blog-input{
+ 	width:48%;
+ 	margin:0px auto;
+}
+
+.blog-input input:focus{
+ 	color:rgb(0,0,0);
+}
+
+.post-list-container{
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.blog-button{
+}
+
+.blog-post-container{
+}
+
